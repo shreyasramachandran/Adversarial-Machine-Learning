@@ -109,7 +109,7 @@ classifier.fit(tfidf_train_X, train_y)
 pred = classifier.predict(tfidf_test_X)
 accuracy_score(test_y, pred)
 
-
+"""
 tok = nltk.tokenize.word_tokenize(string)
 tok = [w for w in tok if not w in stop_words]
 tok = tok[2:]
@@ -119,4 +119,4 @@ tok = wnl.lemmatize(tok)
 tok = [tok]
 tok = tf.transform(tok)
 classifier.predict(tok)
-
+"""
